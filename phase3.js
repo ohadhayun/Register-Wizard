@@ -7,3 +7,27 @@ document.querySelector('#finish').addEventListener('click', function(event){
     document.getElementById('summary').classList.remove('hidden');
     document.getElementById('phase3').classList.add('hidden');
 });
+
+
+function toPhase2(){
+    let cityCheck =localStorage.getItem("city");
+    let birthInput1 =localStorage.getItem("street");
+    let nameInput1 =localStorage.getItem("Addressnumber");
+    
+    if(cityCheck==null || cityCheck == false){
+        alert('your city input is empty');
+        window.location.href = 'phase-2.html';
+        return;
+    }
+    if(street==null || street == ''){
+        alert('your street input is empty');
+        window.location.href = 'phase-2.html';
+        return;
+    }
+    if (Addressnumber==null || Addressnumber.length < 2) {
+        alert("your address number input is empty!");
+        window.location.href = 'phase-2.html';
+        return;
+    }
+}
+toPhase2();

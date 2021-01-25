@@ -1,12 +1,9 @@
 document.querySelector('#finish').addEventListener('click', function(event){
     event.preventDefault();
-    let hobbiesInput = document.querySelector('#hobiselect').Value,
-        imgInput = document.querySelector('#imgInput').Value;
-
+    let hobbiesInput = document.querySelector('#hobiselect').value,
+        imgInput = document.querySelector('#imgInput').value;
     localStorage.setItem("hobbies", hobbiesInput);
     localStorage.setItem("id's image", imgInput);
-
-        alert('thank you');
-    document.getElementById('summary').classList.remove('.hidden');
+    document.getElementById('summary').classList.remove('hidden');
+    document.getElementById('phase3').classList.add('hidden');
 });
-

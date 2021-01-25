@@ -35,24 +35,25 @@ function backButton(event){
 }
 
 function inStart(){
-    let emailCheck =localStorage.getItem("name");
-    let birthInput =localStorage.getItem("email");
-    let nameInput =localStorage.getItem("birthday");
-    console.log(emailCheck);
-    if(emailCheck==null || emailCheck == false){
+    let emailCheck1 =localStorage.getItem("name");
+    let birthInput1 =localStorage.getItem("email");
+    let nameInput1 =localStorage.getItem("birthday");
+    
+    if(emailCheck1==null || emailCheck1 == false){
         alert('Wrong email address.');
         window.location.href = 'phase1.html';
         return;
     }
-    if(birthInput==null || birthInput == ''){
+    if(birthInput1==null || birthInput1 == ''){
         alert('Enter Birthday');
         window.location.href = 'phase1.html';
         return;
     }
-    if (nameInput==null || nameInput.length < 2) {
+    if (nameInput1==null || nameInput1.length < 2) {
         alert("Name must have at least 3 letters!");
         window.location.href = 'phase1.html';
         return;
     }
 }
+
 inStart();

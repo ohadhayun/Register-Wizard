@@ -34,25 +34,25 @@ function backButton(event){
     window.location.href = 'phase1.html';
 }
 
-// function inStart(){
-//     let emailCheck1 =localStorage.getItem("name");
-//     let birthInput1 =localStorage.getItem("email");
-//     let nameInput1 =localStorage.getItem("birthday");
+function inStart(){
+    let emailCheck1 =localStorage.getItem("name");
+    let birthInput1 =localStorage.getItem("email");
+    let nameInput1 =localStorage.getItem("birthday");
     
-//     if(emailCheck1==null || emailCheck1 == false){
-//         alert('Wrong email address.');
-//         window.location.href = 'phase1.html';
-//         return;
-//     }
-//     if(birthInput1==null || birthInput1 == ''){
-//         alert('Enter Birthday');
-//         window.location.href = 'phase1.html';
-//         return;
-//     }
-//     if (nameInput1==null || nameInput1.length < 2) {
-//         alert("Name must have at least 3 letters!");
-//         window.location.href = 'phase1.html';
-//         return;
-//     }
-// }
-// inStart();
+    if(emailCheck1==null || emailCheck1 == false){
+        alert('Wrong email address.');
+        window.location.href = 'phase1.html';
+        return;
+    }
+    if(birthInput1==null || birthInput1 == ''){
+        alert('Enter Birthday');
+        window.location.href = 'phase1.html';
+        return;
+    }
+    if (nameInput1==null || nameInput1.length < 2) {
+        alert("Name must have at least 3 letters!");
+        window.location.href = 'phase1.html';
+        return;
+    }
+}
+inStart();

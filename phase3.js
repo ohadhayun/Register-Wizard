@@ -1,6 +1,3 @@
-
-
-
 document.querySelector('#finish').addEventListener('click', function(event){
     event.preventDefault();
     let hobbiesInput = document.querySelector('#hobiselect').Value,

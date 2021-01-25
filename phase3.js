@@ -8,10 +8,15 @@ document.querySelector('#finish').addEventListener('click', function(event){
     document.getElementById('phase3').classList.add('hidden');
 });
 
+document.querySelector('#backTo2').addEventListener('click', function(event){
+    event.preventDefault();
+    window.location.href = 'phase-2.html';
+});
+
 function toPhase2(){
     let cityCheck =localStorage.getItem("city");
-    let birthInput1 =localStorage.getItem("street");
-    let nameInput1 =localStorage.getItem("Addressnumber");
+    let street =localStorage.getItem("street");
+    let Addressnumber =localStorage.getItem("Addressnumber");
     
     if(cityCheck==null || cityCheck == false){
         alert('your city input is empty');

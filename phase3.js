@@ -8,7 +8,6 @@ document.querySelector('#finish').addEventListener('click', function(event){
     document.getElementById('phase3').classList.add('hidden');
 });
 
-
 function toPhase2(){
     let cityCheck =localStorage.getItem("city");
     let birthInput1 =localStorage.getItem("street");

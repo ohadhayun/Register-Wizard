@@ -14,7 +14,6 @@ document.querySelector('#finish').addEventListener('click', function(event){
     alert("Please put your image");
     return;
     }
-
     document.getElementById('summary').classList.remove('hidden');
     document.getElementById('phase3').classList.add('hidden');
 });

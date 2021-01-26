@@ -4,6 +4,15 @@ document.querySelector('#finish').addEventListener('click', function(event){
         imgInput = document.querySelector('#imgInput').value;
     localStorage.setItem("hobbies", hobbiesInput);
     localStorage.setItem("id's image", imgInput);
+
+    if(hobbiesInput == false){
+    alert("Please select a hobbie");
+    }
+    
+    if(imgInput == false){
+    alert("Please put your image");
+    }
+
     document.getElementById('summary').classList.remove('hidden');
     document.getElementById('phase3').classList.add('hidden');
 });
@@ -15,20 +24,22 @@ document.querySelector('#backTo2').addEventListener('click', function(event){
 
 function toPhase2(){
     let cityCheck =localStorage.getItem("city");
-    let street =localStorage.getItem("street");
-    let Addressnumber =localStorage.getItem("Addressnumber");
+    let streetCheck =localStorage.getItem("street");
+    let AddressnumberCheck =localStorage.getItem("Addressnumber");
     
     if(cityCheck==null || cityCheck == false){
         alert('your city input is empty');
         window.location.href = 'phase-2.html';
         return;
     }
-    if(street==null || street == ''){
+    
+    if(streetCheck == null || streetCheck == false){
         alert('your street input is empty');
         window.location.href = 'phase-2.html';
         return;
     }
-    if (Addressnumber==null || Addressnumber.length < 2) {
+
+    if (AddressnumberCheck == null || AddressnumberCheck == 0) {
         alert("your address number input is empty!");
         window.location.href = 'phase-2.html';
         return;

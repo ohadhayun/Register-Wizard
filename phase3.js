@@ -7,10 +7,12 @@ document.querySelector('#finish').addEventListener('click', function(event){
 
     if(hobbiesInput == false){
     alert("Please select a hobbie");
+    return;
     }
     
     if(imgInput == false){
     alert("Please put your image");
+    return;
     }
 
     document.getElementById('summary').classList.remove('hidden');
